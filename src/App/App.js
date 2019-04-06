@@ -1,26 +1,21 @@
 import React, { Component } from 'react';
-import logo from './../logo.svg';
 import './App.css';
 import ButtonAppBar from "./Components/AppBar"
 
-const body = {
-  minHeight: "100vh",
-  backgroundColor: '#282c34',
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-}
 
 class App extends Component {
 
   render() {
     return (
       <div id="App" className="App">
-        <ButtonAppBar></ButtonAppBar>
-        <div 
-         className="App-content" style={body}
+        {/* <ButtonAppBar></ButtonAppBar> */}
+        <div className="App-header"> test </div>
+        <div
+          className="App-body"
         >
-          <div className="centerElements">David</div>
+          <div className="centerElements">
+            <p>David</p>
+          </div>
         </div>
       </div>
     );
