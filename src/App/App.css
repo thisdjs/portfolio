@@ -5,7 +5,7 @@
 }
 
 .App-header {
-  background-color: #2D59D2;
+  /* background-color: #2D59D2; */
   height: 60px;
 }
 
@@ -14,6 +14,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-Color: #282c34;
-  font-size: calc(10px + 2vmin);
+  /* background-Color: #282c34; */
+  /* font-size: calc(10px + 2vmin); */
+}
+
+.content {
+  margin: 5px;
+}
+
+.profilePiContainer {
+  text-align: center;  
+}
+
+.texts {
+  padding: 10px;
+}
+
+img {
+  border-radius: 50%;
 }
