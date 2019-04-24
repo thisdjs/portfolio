@@ -20,10 +20,7 @@
 
 .content {
   margin: 5px;
-}
-
-.profilePiContainer {
-  text-align: center;  
+  max-width: 700px;
 }
 
 .texts {

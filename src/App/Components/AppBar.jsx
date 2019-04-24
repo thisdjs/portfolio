@@ -7,9 +7,6 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 const styles = {
-  root: {
-    flexGrow: 1,
-  },
   grow: {
     flexGrow: 1,
   },
@@ -19,25 +16,19 @@ const styles = {
   },
 }
 
-const background = {
-  backgroundColor: '#282c34'
-}
-
 function ButtonAppBar(props) {
   const { classes } = props
   return (
-    <div style={background} className={classes.root}>
-      <AppBar position="static">
-        <Toolbar >
-          {/* <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-            <MenuIcon />
-          </IconButton> */}
-          <Typography variant="h6" color="inherit" className={classes.grow}></Typography> 
-          <Button color="secondary">Projects</Button>
-          <Button color="secondary">DevNotes</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <AppBar position="static" color="white" style={{boxShadow:"initial"}}>
+      <Toolbar >
+        <Typography variant="h6" color="inherit" className={classes.menuButton}>
+          <Typography variant="h4" className="animated slideInDown">David</Typography >
+        </Typography>
+        <Typography variant="h6" color="inherit" className={classes.grow}></Typography> 
+        <Button color="primary"><b>Projects</b></Button>
+        <Button color="primary">Contacts</Button>
+      </Toolbar>
+    </AppBar>
   );
 }
 
