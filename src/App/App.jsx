@@ -48,10 +48,10 @@ class App extends Component {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       </Typography>
-                    </div>
-                  </Grid>
+                  </div>
+                </Grid>
               </Grid>
-            </Grid>              
+            </Grid>
           </div>
         </div>
       </div>
