@@ -25,16 +25,9 @@
 
 .texts {
   padding: 10px;
+  /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
 }
 
 img {
   border-radius: 50%;
-}
-
-hr{ 
-  
-  border:         none;
-  border-left:    1px solid hsla(200, 10%, 50%,100);
-  height:         10px;
-  width:          1px;       
 }

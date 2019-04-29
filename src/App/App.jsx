@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import ButtonAppBar from "./Components/AppBar"
-import { Grid, Typography, Card, createMuiTheme, withTheme } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 
 class App extends Component {
 
@@ -10,9 +10,7 @@ class App extends Component {
       <div id="App" className="App">
         <ButtonAppBar></ButtonAppBar>
         {/* <div className="App-header"> test </div> */}
-        <div
-          className="App-body"
-        >
+        <div className="App-body">
           <div className="content animated">
             <Grid container spacing={32}>
               <Grid item container>
