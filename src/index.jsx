@@ -33,7 +33,6 @@ function RenderApp() {
 }
 
 render(<RenderApp />, document.querySelector('#root'));
-
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 

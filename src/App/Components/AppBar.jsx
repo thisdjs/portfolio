@@ -14,7 +14,7 @@ const styles = {
     flexGrow: 1,
   },
   menuButton: {
-    marginLeft: -12,
+    // marginLeft: -12,
     marginRight: 20,
   },
 }
@@ -23,9 +23,11 @@ function ButtonAppBar(props) {
   const { classes } = props
 
   return (
-    <AppBar position="static" color="secondary" style={{boxShadow:"initial"}} className="animated slideInDown delay-1s">
+    <AppBar position="static" color="secondary"
+      style={{boxShadow:"initial"}} 
+      className="animated slideInDown delay-1s">
       <Toolbar >
-        <Typography variant="h4" color="inherit" className={classes.menuButton}>
+        <Typography variant="h4" color="inherit" className={`${classes.menuButton}`}>
           DS
         </Typography>
         <Typography variant="h6" color="inherit" className={classes.grow}></Typography> 

@@ -7,6 +7,7 @@
     "@material-ui/styles": "^3.0.0-alpha.10",
     "animate.css": "^3.7.0",
     "react": "^16.8.3",
+    "react-border-wrapper": "^1.0.2",
     "react-dom": "^16.8.3",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.5"
