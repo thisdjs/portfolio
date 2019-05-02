@@ -20,22 +20,22 @@ const styles = {
 }
 
 function ButtonAppBar(props) {
-  const { classes } = props
+  const { classes, children } = props
 
   return (
-    <AppBar position="static" color="secondary"
+    <AppBar position="fixed" color="secondary"
       style={{boxShadow:"initial"}} 
       className="animated slideInDown delay-1s">
       <Toolbar >
-        <Typography variant="h4" color="inherit" className={`${classes.menuButton}`}>
+        <Typography variant="h4" color="inherit" className={`${classes.menuButton}`} style={{cursor: "pointer"}}>
           DS
         </Typography>
         <Typography variant="h6" color="inherit" className={classes.grow}></Typography> 
-        <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
+        <Box >
           <Button color="primary"><b>Projects</b></Button>
           {/* <Button color="primary">Contacts</Button> */}
-          <Typography variant="h6"> | </Typography>
-          <IconButton color="inherit"  onClick={() => window.open("https://github.com/thisdjs")} >
+          {/* <Typography variant="h6"> | </Typography>
+          <IconButton color="inherit" onClick={() => window.open("https://github.com/thisdjs")} >
             <span 
               className="fab fa-github" 
               style={{color:"#282c34", cursor: "pointer"}}>
@@ -52,9 +52,10 @@ function ButtonAppBar(props) {
               className="fab fa-skype" 
               style={{color:"#282c34", cursor: "pointer"}}>
             </span>
-          </IconButton>
+          </IconButton> */}
         </Box>
       </Toolbar>
+      {children}
     </AppBar>
   );
 }
