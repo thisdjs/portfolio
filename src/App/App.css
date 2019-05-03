@@ -1,8 +1,13 @@
 .App {
-  
+
 }
 
-.first-section {
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.section {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +22,7 @@
   background: linear-gradient(#74ebd5, #ACB6E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-body {
+.container {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -36,6 +41,6 @@
   /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
 }
 
-img {
+.avatar {
   border-radius: 50%;
 }
