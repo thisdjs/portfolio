@@ -21,6 +21,7 @@ const styles = theme => ({
 
 function AppNavBar(props) {
   const { classes, children } = props
+  console.log(window.innerWidth)
 
   return (
     <>
@@ -38,7 +39,7 @@ function AppNavBar(props) {
         </Box>
       </Toolbar>
     </AppBar>
-    <div  className={classes.toolbar}/>
+    { window.innerWidth <= 600 || window.innerHeight <= 450 ? <div className={classes.toolbar}/> : null }
     {children}
     </>
   );

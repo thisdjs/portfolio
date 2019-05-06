@@ -13,8 +13,8 @@ const styles = theme => ({
 })
 class App extends Component { 
 
+  
   render() {
-
     const {classes} = this.props
 
     return (
@@ -29,7 +29,7 @@ class App extends Component {
                     <Grid item xs={12} sm={4}>
                       <Grid item xs style={{textAlign:"center", /*padding:"10px"*/}}>
                         <img className="avatar" height={"150px"} src="profilePic.jpg" alt="profile" 
-                          onClick={()=>speechSynthesis.speak(new SpeechSynthesisUtterance('I\'m so fucking dumb'))}>
+                          onClick={()=>speechSynthesis.speak(new SpeechSynthesisUtterance('I like coffe'))}>
                         </img>
                       </Grid>
                       <Grid item xs style={{textAlign:"center" /*, padding:"10px"*/}}>
@@ -75,10 +75,25 @@ class App extends Component {
             
             <Slide style={{backgroundColor:"blue"}}>
               <StyledSection>
-                  <h1>Another slide content</h1>
+                <Grid container spacing={32} style={{margin:"0px"}}>
+                  <h1>tecnologies</h1>
                   <img style={{height:"250px"}} 
                     src="https://images.unsplash.com/photo-1556596768-6d27210a5ee2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80">
                   </img>
+                </Grid>
+                {/* <div class="LI-profile-badge"  
+                  data-version="v1" 
+                  data-size="medium" 
+                  data-locale="en_US" 
+                  data-type="horizontal" 
+                  data-theme="dark" 
+                  data-vanity="david-j-santos">                  
+                  <a 
+                    href='https://pt.linkedin.com/in/david-j-santos?trk=profile-badge'
+                    target="_blank">
+                      David Santos
+                  </a>
+                </div> */}
               </StyledSection>
             </Slide>
           </FullPage>
@@ -90,7 +105,6 @@ class App extends Component {
 }
 
 export default App;
-
 
 
 // const styles = (theme) => ({

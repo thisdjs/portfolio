@@ -50,3 +50,9 @@
     height: auto;
   }
 }
+
+@media only screen and (max-height: 400px) {
+  .section {
+    height: auto;
+  }
+}
