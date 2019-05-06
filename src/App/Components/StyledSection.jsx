@@ -6,8 +6,8 @@ export default function StyledSection(props) {
 
     return(
         <div className="section">
-            <div className="container"> 
-                <div className="content"> 
+            <div className="section-container"> 
+                <div className="section-content"> 
                     {children}
                 </div>
             </div>

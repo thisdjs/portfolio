@@ -9,19 +9,21 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import { IconButton } from '@material-ui/core'
 
-const styles = {
+const styles = theme => ({
   grow: {
     flexGrow: 1,
   },
   menuButton: {
     marginRight: 20,
   },
-}
+  toolbar: theme.mixins.toolbar,
+})
 
 function AppNavBar(props) {
   const { classes, children } = props
 
   return (
+    <>
     <AppBar position="fixed" color="secondary"
       style={{boxShadow:"initial"}} 
       className="animated slideInDown delay-1s">
@@ -36,6 +38,9 @@ function AppNavBar(props) {
         </Box>
       </Toolbar>
     </AppBar>
+    <div  className={classes.toolbar}/>
+    {children}
+    </>
   );
 }
 
