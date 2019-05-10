@@ -51,6 +51,12 @@ class App extends Component {
                             style={{color:"#282c34", cursor: "pointer"}}>
                           </span>
                         </IconButton>
+                        <IconButton color="inherit" onClick={() => console.log("clicked")}>
+                          <span 
+                            className="fab fa-gitlab" 
+                            style={{color:"#282c34", cursor: "pointer"}}>
+                          </span>
+                        </IconButton>
                       </Grid>
                     </Grid>
                     <Grid item xs={12} sm={8}>
