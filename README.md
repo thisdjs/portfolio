@@ -1,5 +1,5 @@
 ---
-permalink: /src/index.jsx
+permalink: ./src/index.jsx
 ---
 
 # Portfolio
