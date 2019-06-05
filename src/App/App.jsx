@@ -1,21 +1,15 @@
 import React, { Component } from 'react'
 import './App.css'
 import AppNavBar from "./Components/AppNavBar"
-import { Grid, Typography, IconButton, Paper } from '@material-ui/core'
+import { Grid, Typography, IconButton } from '@material-ui/core'
 import BorderWrapper from 'react-border-wrapper'
 import { FullPage, Slide } from 'react-full-page';
 import StyledSection from './Components/StyledSection'
-import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core/styles'
 
-const styles = theme => ({
-    toolbar: theme.mixins.toolbar,
-})
-class App extends Component { 
-
-  
+class App extends Component {   
   render() {
-    const {classes} = this.props
+
+    navigator.geolocation.getCurrentPosition((position) => console.log(position))
 
     return (
       <div id="App" className="App">
@@ -111,31 +105,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-// const styles = (theme) => ({
-//   toolbar: theme.mixins.toolbar,
-// });
-
-// const App = (props) => {
-//   const { classes } = props;
-
-//   return (
-//     <div>
-//       <AppBar color="primary" position="fixed">
-//         <Toolbar>
-//           <Typography color="inherit" type="title">
-//             My Title
-//           </Typography>
-//         </Toolbar>
-//       </AppBar>
-//       <Paper>
-//         <div className={classes.toolbar} />
-//         MyContent will be shifted downwards by the div above. If you remove 
-//         the div, your content will disappear under the app bar.
-//       </Paper>
-//     </div>
-//   );
-// }
-
-// export default withStyles(styles)(App);
