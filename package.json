@@ -3,12 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
-    "@material-ui/styles": "^3.0.0-alpha.10",
     "animate.css": "^3.7.0",
     "gh-pages": "^2.0.1",
     "react": "^16.8.3",
-    "react-border-wrapper": "^1.0.2",
     "react-dom": "^16.8.3",
     "react-full-page": "^0.1.6",
     "react-router-dom": "^5.0.0",
