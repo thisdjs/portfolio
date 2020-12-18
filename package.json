@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@iconscout/react-unicons": "^1.1.6",
+    "a11y-react-emoji": "^1.1.2",
     "animate.css": "^3.7.0",
     "gh-pages": "^2.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-full-page": "^0.1.6",
+    "react-responsive": "^8.2.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.5"
   },
