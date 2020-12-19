@@ -29,7 +29,7 @@ p {
 
 .bio-content {
     /* margin: 5px 5px 5px 25px; */
-    padding-top: 10px;
+    padding: 10px 0px 20px 0px;
 }
 
 .img-wrapper {
@@ -69,4 +69,22 @@ p {
 
 .social-icons a {
     margin: 0px 10px;
+}
+
+.social-icons a svg {
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icons a svg:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    background: #f0f0f0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
