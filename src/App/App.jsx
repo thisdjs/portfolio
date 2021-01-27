@@ -70,22 +70,22 @@ function App() {
 
             <section className="social-icons">
               <a title="Github" target="_blank" type="button" href="https://github.com/thisdjs">
-                <UilGithubAlt size="20" color={socialIconColor} />
+                <UilGithubAlt size="20" color={socialIconColor} rel="noopener noreferrer"/>
               </a>
               <a title="LinkedIn" target="_blank" type="button" href="https://www.linkedin.com/in/david-j-santos/">
-                <UilLinkedinAlt size="20" color={socialIconColor} />
+                <UilLinkedinAlt size="20" color={socialIconColor} rel="noopener noreferrer" />
               </a>
               <a title="CV" target="_blank" type="button" href="http://www.example.com">
-                <UilFileAlt size="20" color={socialIconColor} />
+                <UilFileAlt size="20" color={socialIconColor} rel="noopener noreferrer" />
               </a>
               <a title="Email" target="_blank" type="button" href="http://www.example.com">
-                <UilEnvelopeEdit size="20" color={socialIconColor} />
+                <UilEnvelopeEdit size="20" color={socialIconColor} rel="noopener noreferrer" />
               </a>
               <a title="Skype" target="_blank" type="button" href="skype:profile_name?live:ad9fb5f21dec303">
-                <UilSkypeAlt size="20" color={socialIconColor} />
+                <UilSkypeAlt size="20" color={socialIconColor} rel="noopener noreferrer" />
               </a>
               <a title="Whatsapp" target="_blank" type="button" href="https://wa.me/351961377275">
-                <UilWhatsapp size="20" color={socialIconColor} />
+                <UilWhatsapp size="20" color={socialIconColor} rel="noopener noreferrer" />
               </a>
             </section>
 

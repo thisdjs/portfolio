@@ -46,9 +46,11 @@ p {
     height: 100vh;
 }
 
-.selfie-content {
-    /* margin: 5px 25px 5px 5px; */
-}
+ /*
+ .selfie-content {
+    margin: 5px 25px 5px 5px; 
+ }
+*/
 
 .bio-content {
     /* margin: 5px 5px 5px 25px; */
@@ -56,7 +58,7 @@ p {
     text-align: center;
 }
 
-.motto {
+p.motto {
     font-size: 12px;
     opacity: 80%;
     padding-top: 10px;
