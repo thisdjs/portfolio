@@ -12,14 +12,12 @@ import profilePicHover from './assets/profile_2.png'
 import './App.css'
 
 const emojiList = ["👨‍💻", "🕵️‍♂️", "🥷", "🦸‍♂️", "🧙‍♂️", "😱", "🤓", "🧐", "😕", "😤", "😫", "🤖", "💪"]
+const socialIconColor = '#81A1C1' // check App.css for Nord theme colors
 
 function App() {
+  /*
   const [emoji, setEmoji] = useState(emojiList[0]);
 
-  const defaultColor = '#30475e'
-  let showEmoji = emojiList[0]
-
-  /*
   useEffect(() => {
     const interval = setInterval(() => {
       setEmoji(emojiList[Math.floor(Math.random() * emojiList.length)])
@@ -65,28 +63,29 @@ function App() {
             <section className="bio-content">
               <p>
                 I make content for the web&nbsp;
-                <Emoji symbol={emoji} label="emoji" />
+                <Emoji symbol={emojiList[0]} label="emoji" />
               </p>
+              <p className="motto">Motto: <i>The trouble is, you think you have time.</i></p>
             </section>
 
             <section className="social-icons">
               <a title="Github" target="_blank" type="button" href="https://github.com/thisdjs">
-                <UilGithubAlt size="20" color={defaultColor} />
+                <UilGithubAlt size="20" color={socialIconColor} />
               </a>
               <a title="LinkedIn" target="_blank" type="button" href="https://www.linkedin.com/in/david-j-santos/">
-                <UilLinkedinAlt size="20" color="#30475e" />
+                <UilLinkedinAlt size="20" color={socialIconColor} />
               </a>
               <a title="CV" target="_blank" type="button" href="http://www.example.com">
-                <UilFileAlt size="20" color="#30475e" />
+                <UilFileAlt size="20" color={socialIconColor} />
               </a>
               <a title="Email" target="_blank" type="button" href="http://www.example.com">
-                <UilEnvelopeEdit size="20" color="#30475e" />
+                <UilEnvelopeEdit size="20" color={socialIconColor} />
               </a>
               <a title="Skype" target="_blank" type="button" href="skype:profile_name?live:ad9fb5f21dec303">
-                <UilSkypeAlt size="20" color="#30475e" />
+                <UilSkypeAlt size="20" color={socialIconColor} />
               </a>
               <a title="Whatsapp" target="_blank" type="button" href="https://wa.me/351961377275">
-                <UilWhatsapp size="20" color="#30475e" />
+                <UilWhatsapp size="20" color={socialIconColor} />
               </a>
             </section>
 
